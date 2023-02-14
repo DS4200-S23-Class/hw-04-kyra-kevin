@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.left-col {
+  width: 60%;
+  padding: 20px;
+}
+
+.right-col {
+  width: 40%;
+  padding: 20px;
+}
+
+#frame {
+  width: 400px;
+  height: 400px;
+}
+
+.vl {
+  border-left: 5px solid black;
+  height: 400px;
+  position: absolute;
+  top: 10.5%;
+}
+
+.hl {
+  border-bottom: 5px solid black;
+  width: 35%;
+  position: absolute;
+}
+

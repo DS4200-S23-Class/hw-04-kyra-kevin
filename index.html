@@ -3,12 +3,47 @@
 
 <head>
     <meta charset=utf-8/>
+    <title>hw-04</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
+    <h1>hw-04: Event Handling</h1>
 
+    <div class="flex-container">
+        <!--LEFT COLUMN-->
+        <div class="left-col">
+            <!-- Use one svg tag as a "frame", and build inside of it -->
+            <svg id="frame"> 
+                <!-- Points: (1, 2), (2, 4), (6, 2), (9, 9)
+                        ** for 400x400 each increment (1-9) ~45px
+                        x-coords increment by 45,  y-coords decrement by 45 per #
+                     Corresponding: (45, 310), (90, 220), (270, 310), (355, 45) -->
+                <circle cx="45" cy="310" r="10"/>
+                <circle cx="90" cy="220" r="10"/> 
+                <circle cx="270" cy="310" r="10"/> 
+                <circle cx="355" cy="45" r="10"/>  
+                <!-- axes -->
+                <div class="vl"></div>
+                <div class="hl"></div>
+            </svg>
 
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="right-col">
+            
+        </div>
+    </div>
+
+    <h2>Acknowledgements</h2>
+    <div>
+        <ul>
+            <li> <a href = "https://www.w3schools.com/howto/howto_css_vertical_line.asp"> Vertical Line </li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
