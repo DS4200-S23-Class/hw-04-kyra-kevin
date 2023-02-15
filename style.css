@@ -28,18 +28,19 @@ h1, h2 {
 #frame {
   width: 400px;
   height: 400px;
-}
-
-.vl {
   border-left: 5px solid black;
-  height: 400px;
-  position: absolute;
-  top: 10.5%;
-}
-
-.hl {
   border-bottom: 5px solid black;
-  width: 35%;
-  position: absolute;
 }
 
+circle {
+  fill: mediumpurple;
+}
+
+circle:hover {
+  fill: blueviolet;
+}
+
+.border {
+  stroke: green;
+  stroke-width: 5px;
+}

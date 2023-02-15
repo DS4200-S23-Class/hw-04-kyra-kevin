@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
     <meta charset=utf-8/>
@@ -15,31 +15,70 @@
         <!--LEFT COLUMN-->
         <div class="left-col">
             <!-- Use one svg tag as a "frame", and build inside of it -->
-            <svg id="frame"> 
+            <svg id="frame">
                 <!-- Points: (1, 2), (2, 4), (6, 2), (9, 9)
                         ** for 400x400 each increment (1-9) ~45px
                         x-coords increment by 45,  y-coords decrement by 45 per #
                      Corresponding: (45, 310), (90, 220), (270, 310), (355, 45) -->
-                <circle cx="45" cy="310" r="10"/>
-                <circle cx="90" cy="220" r="10"/> 
-                <circle cx="270" cy="310" r="10"/> 
-                <circle cx="355" cy="45" r="10"/>  
-                <!-- axes -->
-                <div class="vl"></div>
-                <div class="hl"></div>
+                <circle class="point" id="12" cx="40" cy="320" r="10"/>
+                <circle class="point" id="24" cx="80" cy="240" r="10"/>
+                <circle class="point" id="62" cx="240" cy="320" r="10"/>
+                <circle class="point" id="99" cx="360" cy="40" r="10"/>
             </svg>
 
         </div>
         <!--RIGHT COLUMN-->
         <div class="right-col">
-            
+          <!--This paragraph is populated after a point is clicked-->
+          <p id="coord-id"></p>
+
+
+          <label for="x-coord">Select the x-coordinate for the point you want to add:</label>
+
+          <select name="x-coord" id="x-coord">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <br/>
+          <br/>
+
+          <label for="y-coord">Select the x-coordinate for the point you want to add:</label>
+
+          <select name="y-coord" id="y-coord">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <br/>
+          <br/>
+
+          <button id="submit">Submit</button>
+
         </div>
     </div>
 
     <h2>Acknowledgements</h2>
     <div>
         <ul>
-            <li> <a href = "https://www.w3schools.com/howto/howto_css_vertical_line.asp"> Vertical Line </li>
+            <li> <a href = "https://www.w3schools.com/howto/howto_css_vertical_line.asp"> Vertical Line </a> </li>
+            <li> <a href="https://www.w3schools.com/tags/tag_select.asp">Tag Select</a></li>
+            <li> <a href="https://www.w3schools.com/jsref/jsref_charat.asp">CharAr Javascript</a></li>
+            <li> <a href="https://www.w3schools.com/xml/met_document_createelementns.asp">createElementNS() method</a></li>
         </ul>
     </div>
 
